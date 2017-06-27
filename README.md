@@ -1,7 +1,7 @@
 # DavesList
 ## Rooms for rent. One admin w/pwd. Spring Security. Bootstrap.
 
-To make it easier for students that live far away to participate in the academy, Dave has decided to create a website to list all the people that he knows that have rooms for rent available. This site is password protected because only Dave should be able to add or update a listing. Using Spring Security to provide the login functionality. It doesn't need a database for the security because only 1 person will be logging in, so hardwire the login to be username: DaveWolf, password: beastmaster.
+To make it easier for students that live far away to participate in the academy, Dave has decided to create a website to list all the people that he knows that have rooms for rent available. This site is password protected because only Dave should be able to add or update a listing. Using Spring Security to provide the login functionality. It doesn't need a database for the security because only 1 person will be logging in, so hardwire the login.
 
 The rooms should show up as a list with the address, city, state, and price on the list. When the user clicks on the link for an item, it goes to another screen and shows the detail of the individual listing: description, rules, wifi (yes/no), cable (none/basic/premium) and private bathroom (yes/no).
 
