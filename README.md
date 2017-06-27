@@ -1,5 +1,5 @@
 # DavesList
-##Rooms for rent. One admin w/pwd. Bootstrap.
+## Rooms for rent. One admin w/pwd. Bootstrap.
 
 To make it easier for students that live far away to participate in the academy, Dave has decided to create a website to list all the people that he knows that have rooms for rent available. This site is password protected because only Dave should be able to add or update a listing. Using Spring Security to provide the login functionality. It doesn't need a database for the security because only 1 person will be logging in, so hardwire the login to be username: DaveWolf, password: beastmaster.
 
