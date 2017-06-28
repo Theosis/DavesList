@@ -1,4 +1,4 @@
-package com.jdpaley;
+/*package com.jdpaley;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -13,4 +13,4 @@ public class SecurityConfig {
             .inMemoryAuthentication()
                 .withUser("DaveWolf").password("beastmaster").roles("USER");
     }
-}
+}*/

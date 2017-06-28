@@ -4,7 +4,7 @@
 		xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 
 <title>Dave's List</title>
 </head>
@@ -15,15 +15,24 @@
       
       <form action="#" th:action="@{/add}" method="post">
           
-          <p>Address: <input type="text" th:field="${room.address}"></p>
-          <p>City: <input type="text" th:field="${room.city}"></p>
+          <p>Address: <input type="text" th:field="${room.address}" /></p>
+          <p>City: <input type="text" th:field="${room.city}" /></p>
 
-          <p><input type="submit" value="Submit"> </p>
+          <p><input type="submit" value="Submit" /> </p>
           
       </form>
 
 
 <h2>Rooms Available For Rent</h2>
-<p> <span th:text = ${list.rooms_str}"> </span> </p>
+
+<!-- <p th:object = @{list} th:text = *{rooms}">()Rooms)</p> -->
+
+      <p th:each="list: ${rooms}"
+      	 th:text="${list.Id}
+      	  ${list.address}
+      	  ${list.city} 
+      	  ${list.state} 
+      	  ${list.price}"/>
+
 </body>
 </html>

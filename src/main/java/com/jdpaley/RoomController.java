@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class RoomController { 
@@ -20,8 +21,8 @@ public class RoomController {
 //		m.addAttribute("room", room);
 		
 		Iterable<Room> rooms = roomRepository.findAll();
-		String rooms_str = rooms.toString();
-		m.addAttribute("list", rooms_str);
+		//String rooms_str = rooms.toString();
+		m.addAttribute("list", rooms);
 		
 		return "index";
 
@@ -43,5 +44,9 @@ public class RoomController {
 		return "admin";
 		
 	}
-
+	
+    @RequestMapping("/login")
+    public String login(){
+        return "login";
+    }
 }
