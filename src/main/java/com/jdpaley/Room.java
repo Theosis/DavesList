@@ -1,6 +1,16 @@
 package com.jdpaley;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+
+@Entity
 public class Room {
+	
+	@Id
+	@GeneratedValue
+	private Long Id;
 	
 	private String address;
 	private String city;
@@ -17,6 +27,10 @@ public class Room {
 	
 	//=======================================================
 	
+	public Long getId() {
+		return Id;
+	}
+
 	public String getAddress() {
 		return address;
 	}

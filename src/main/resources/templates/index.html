@@ -6,7 +6,21 @@
 <title>Dave's List</title>
 </head>
 <body>
-<h1>Rooms Available For Rent</h1>
-<p th:text=${list.rooms}" />
+
+<h1>Dave's List</h1>
+<h2>Add Room:</h2>
+      
+      <form action="#" th:action="@{/add}" method="post">
+          
+          <p>Address: <input type="text" th:field="${room.address}"></p>
+          <p>City: <input type="text" th:field="${room.city}"></p>
+
+          <p><input type="submit" value="Submit"> </p>
+          
+      </form>
+
+
+<h2>Rooms Available For Rent</h2>
+<p> <span th:text = ${list.rooms_str}"> </span> </p>
 </body>
 </html>

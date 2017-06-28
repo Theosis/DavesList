@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class RoomController { 
 	
 	@Autowired
-	private RoomRepository roomRepository;
+	RoomRepository roomRepository;
 	
 	@GetMapping(path="/")
 	public String list(@ModelAttribute("room") Room room, Model m) {
@@ -20,7 +20,8 @@ public class RoomController {
 //		m.addAttribute("room", room);
 		
 		Iterable<Room> rooms = roomRepository.findAll();
-		m.addAttribute("list", rooms);
+		String rooms_str = rooms.toString();
+		m.addAttribute("list", rooms_str);
 		
 		return "index";
 
