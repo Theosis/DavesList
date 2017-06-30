@@ -1,4 +1,4 @@
-package com.jdpaley;
+package com.jdpaley.models;
 
 import java.io.Serializable;
 import javax.persistence.*;

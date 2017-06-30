@@ -1,3 +1,4 @@
+package com.jdpaley.configs;
 /*package com.jdpaley;
 
 import org.springframework.beans.factory.annotation.Autowired;

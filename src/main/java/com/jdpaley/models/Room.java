@@ -1,4 +1,4 @@
-package com.jdpaley;
+package com.jdpaley.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
